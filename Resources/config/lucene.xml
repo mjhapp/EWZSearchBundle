@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://www.symfony-project.org/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.symfony-project.org/schema/dic/services http://www.symfony-project.org/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="search.lucene.search.class">Bundle\SearchBundle\Lucene\LuceneSearch</parameter>
+
+        <parameter key="lucene.index.path">null</parameter>
+        <parameter key="lucene.analyzer">null</parameter>
+    </parameters>
+
+    <services>
+        <service id="search.lucene" class="%search.lucene.search.class%">
+            <argument key="luceneIndexPath">%lucene.index.path%</argument>
+            <argument key="analyzer">%lucene.analyzer%</argument>
+        </service>
+    </services>
+</container>
