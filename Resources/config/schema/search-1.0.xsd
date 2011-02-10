@@ -5,6 +5,8 @@
     targetNamespace="http://www.symfony-project.org/schema/dic/search"
     elementFormDefault="qualified">
 
+    <xsd:element name="config" type="config" />
+
     <xsd:complexType name="config">
         <xsd:attribute name="analyzer" type="xsd:string" />
         <xsd:attribute name="path" type="xsd:string" />
