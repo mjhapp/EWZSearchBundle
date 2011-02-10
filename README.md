@@ -16,7 +16,7 @@ See http://framework.zend.com/manual/en/zend.search.lucene.extending.html for mo
 
 Here is a yaml example
 
-    search.lucene:
+    search.config:
         analyzer: Zend\Search\Lucene\Analysis\Analyzer\Common\TextNum\CaseInsensitive
         path:     %kernel.root_dir%/cache/%kernel.environment%/lucene/index
 

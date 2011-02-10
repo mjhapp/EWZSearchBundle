@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns="http://www.symfony-project.org/schema/dic/search"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.symfony-project.org/schema/dic/search"
+    elementFormDefault="qualified">
+
+    <xsd:complexType name="config">
+        <xsd:attribute name="analyzer" type="xsd:string" />
+        <xsd:attribute name="path" type="xsd:string" />
+    </xsd:complexType>
+</xsd:schema>
