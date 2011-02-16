@@ -24,9 +24,8 @@ class EWZSearchExtension extends Extension
      */
     protected function doConfigLoad(array $config, ContainerBuilder $container)
     {
-        $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-
-        if (!$container->hasDefinition('search.config')) {
+        if (!$container->hasDefinition('search.lucene')) {
+            $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
             $loader->load('lucene.xml');
         }
 
