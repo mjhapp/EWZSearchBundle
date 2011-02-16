@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://www.symfony-project.org/schema/dic/services http://www.symfony-project.org/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="search.lucene.search.class">Bundle\SearchBundle\Lucene\LuceneSearch</parameter>
+        <parameter key="search.lucene.search.class">EWZ\SearchBundle\Lucene\LuceneSearch</parameter>
 
         <parameter key="lucene.index.path">null</parameter>
         <parameter key="lucene.analyzer">null</parameter>

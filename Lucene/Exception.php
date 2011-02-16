@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundle\SearchBundle\Lucene;
+namespace EWZ\SearchBundle\Lucene;
 
 interface Exception
 {}

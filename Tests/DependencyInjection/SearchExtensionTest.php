@@ -1,10 +1,10 @@
 <?php
 
-namespace Bundle\SearchBundle\Tests\DependencyInjection;
+namespace EWZ\SearchBundle\Tests\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
-use Bundle\SearchBundle\DependencyInjection\SearchExtension;
+use EWZ\SearchBundle\DependencyInjection\SearchExtension;
 
 class SearchExtensionTest extends \PHPUnit_Framework_TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Bundle\SearchBundle\Tests\Lucene;
+namespace EWZ\SearchBundle\Tests\Lucene;
 
-use Bundle\SearchBundle\Lucene\Document;
-use Bundle\SearchBundle\Lucene\Field;
+use EWZ\SearchBundle\Lucene\Document;
+use EWZ\SearchBundle\Lucene\Field;
 
 class LuceneDocumentTest extends \PHPUnit_Framework_TestCase
 {

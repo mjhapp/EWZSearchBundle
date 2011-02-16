@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundle\SearchBundle\DependencyInjection;
+namespace EWZ\SearchBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
@@ -9,7 +9,7 @@ use Symfony\Component\Config\FileLocator;
 
 class SearchExtension extends Extension
 {
-    public function configLoad(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container)
     {
         foreach ($configs as $config) {
             $this->doConfigLoad($config, $container);
@@ -56,7 +56,7 @@ class SearchExtension extends Extension
      */
     public function getNamespace()
     {
-        return 'http://www.symfony-project.org/schema/dic/search';
+        return 'http://www.symfony-project.org/schema/dic/ewz/search';
     }
 
     /**
@@ -68,6 +68,6 @@ class SearchExtension extends Extension
      */
     public function getAlias()
     {
-        return 'search';
+        return 'ewz_search';
     }
 }

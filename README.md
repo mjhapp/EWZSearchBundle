@@ -6,7 +6,13 @@ Installation
 Requires Zend 2.x Zend/Search/Lucene
 You can get it here http://github.com/zendframework/zf2
 
-There are two valid parameters in the lucene.config in your config file:
+**Add the EWZ namespace to your autoloader:**
+
+    // app/autoload.php
+    $loader->registerNamespaces(array(
+        ...
+        'EWZ' => __DIR__.'/../src',
+    ));
 
 **Path and Analyzer**
 
@@ -16,13 +22,13 @@ See http://framework.zend.com/manual/en/zend.search.lucene.extending.html for mo
 
 Here is a yaml example
 
-    search.config:
+    ewz_search:
         analyzer: Zend\Search\Lucene\Analysis\Analyzer\Common\TextNum\CaseInsensitive
         path:     %kernel.root_dir%/cache/%kernel.environment%/lucene/index
 
 **To add to the search:**
 
-use Bundle\SearchBundle\Lucene\LuceneSearch;
+use EWZ\SearchBundle\Lucene\LuceneSearch;
 
     $search = $this->get('search.lucene');
     $document = new Document();
@@ -31,7 +37,7 @@ use Bundle\SearchBundle\Lucene\LuceneSearch;
 
 **To retrieve a query:**
 
-use Bundle\SearchBundle\Lucene\LuceneSearch;
+use EWZ\SearchBundle\Lucene\LuceneSearch;
 
     $search = $this->get('search.lucene');
     $query = 'Symfony2';

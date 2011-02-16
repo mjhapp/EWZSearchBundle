@@ -1,8 +1,8 @@
 <?php
 
-namespace Bundle\SearchBundle\Lucene;
+namespace EWZ\SearchBundle\Lucene;
 
-use Bundle\SearchBundle\Lucene\Lucene;
+use EWZ\SearchBundle\Lucene\Lucene;
 use Zend\Search\Lucene\Analysis\Analyzer\Analyzer;
 use Zend\Search\Lucene\Index\Term;
 
@@ -38,7 +38,7 @@ class LuceneSearch
      *
      *  This is a convience function to add a document to the index
      *
-     * @param Bundle\SearchBundle\Lucene\Document $document
+     * @param EWZ\SearchBundle\Lucene\Document $document
      */
     public function addDocument($document)
     {
