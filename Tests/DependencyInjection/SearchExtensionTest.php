@@ -4,16 +4,20 @@ namespace EWZ\SearchBundle\Tests\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
-use EWZ\SearchBundle\DependencyInjection\SearchExtension;
+
+use EWZ\SearchBundle\DependencyInjection\EWZSearchExtension;
 
 class SearchExtensionTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @covers EWZ\SearchBundle\DependencyInjection\EWZSearchExtension::load
+     */
     public function testConfigLoad()
     {
         $container = $this->getContainer();
-        $loader = new SearchExtension();
+        $loader = new EWZSearchExtension();
 
-        $loader->luceneLoad(array(), $container);
+        $loader->load(array(), $container);
         $this->assertEquals('Bundle\\SearchBundle\\Lucene\\LuceneSearch', $container->getParameter('search.lucene.search.class'), '->luceneLoad() loads the lucene.xml file if not already loaded');
     }
 }
