@@ -2,7 +2,7 @@
 
 namespace EWZ\SearchBundle\DependencyInjection;
 
-use Symfony\Component\DependencyInjection\Extension\Extension;
+use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -56,17 +56,5 @@ class EWZSearchExtension extends Extension
     public function getNamespace()
     {
         return 'http://www.symfony-project.org/schema/dic/ewz/search';
-    }
-
-    /**
-     * Returns the recommended alias to use in XML.
-     *
-     * This alias is also the mandatory prefix to use when using YAML.
-     *
-     * @return string The alias
-     */
-    public function getAlias()
-    {
-        return 'ewz_search';
     }
 }
