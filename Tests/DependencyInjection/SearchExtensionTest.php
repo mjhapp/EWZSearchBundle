@@ -10,7 +10,7 @@ use EWZ\Bundle\SearchBundle\DependencyInjection\EWZSearchExtension;
 class SearchExtensionTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @covers EWZ\SearchBundle\DependencyInjection\EWZSearchExtension::load
+     * @covers EWZ\Bundle\SearchBundle\DependencyInjection\EWZSearchExtension::load
      */
     public function testConfigLoad()
     {

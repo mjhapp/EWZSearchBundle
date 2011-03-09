@@ -38,7 +38,7 @@ class LuceneSearch
      *
      *  This is a convience function to add a document to the index
      *
-     * @param EWZ\SearchBundle\Lucene\Document $document
+     * @param EWZ\Bundle\SearchBundle\Lucene\Document $document
      */
     public function addDocument($document)
     {
