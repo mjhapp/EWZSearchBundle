@@ -28,7 +28,7 @@ Here is a yaml example
 
 **To add to the search:**
 
-use EWZ\SearchBundle\Lucene\LuceneSearch;
+use EWZ\Bundle\SearchBundle\Lucene\LuceneSearch;
 
     $search = $this->get('search.lucene');
     $document = new Document();
@@ -37,7 +37,7 @@ use EWZ\SearchBundle\Lucene\LuceneSearch;
 
 **To retrieve a query:**
 
-use EWZ\SearchBundle\Lucene\LuceneSearch;
+use EWZ\Bundle\SearchBundle\Lucene\LuceneSearch;
 
     $search = $this->get('search.lucene');
     $query = 'Symfony2';

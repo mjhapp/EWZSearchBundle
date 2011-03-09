@@ -1,6 +1,6 @@
 <?php
 
-namespace EWZ\SearchBundle;
+namespace EWZ\Bundle\SearchBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

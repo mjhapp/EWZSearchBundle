@@ -1,8 +1,8 @@
 <?php
 
-namespace EWZ\SearchBundle\Lucene;
+namespace EWZ\Bundle\SearchBundle\Lucene;
 
-use EWZ\SearchBundle\Lucene\Field;
+use EWZ\Bundle\SearchBundle\Lucene\Field;
 use Zend\Search\Lucene\Document as ZendDocument;
 
 class Document extends ZendDocument

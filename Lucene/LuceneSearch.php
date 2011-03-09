@@ -1,8 +1,8 @@
 <?php
 
-namespace EWZ\SearchBundle\Lucene;
+namespace EWZ\Bundle\SearchBundle\Lucene;
 
-use EWZ\SearchBundle\Lucene\Lucene;
+use EWZ\Bundle\SearchBundle\Lucene\Lucene;
 use Zend\Search\Lucene\Analysis\Analyzer\Analyzer;
 use Zend\Search\Lucene\Index\Term;
 

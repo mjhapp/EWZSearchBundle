@@ -1,10 +1,10 @@
 <?php
 
-namespace EWZ\SearchBundle\Tests\Lucene;
+namespace EWZ\Bundle\SearchBundle\Tests\Lucene;
 
-use EWZ\SearchBundle\Lucene\LuceneSearch;
-use EWZ\SearchBundle\Lucene\Document;
-use EWZ\SearchBundle\Lucene\Field;
+use EWZ\Bundle\SearchBundle\Lucene\LuceneSearch;
+use EWZ\Bundle\SearchBundle\Lucene\Document;
+use EWZ\Bundle\SearchBundle\Lucene\Field;
 
 class LuceneSearchTest extends \PHPUnit_Framework_TestCase
 {

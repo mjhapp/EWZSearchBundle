@@ -1,6 +1,6 @@
 <?php
 
-namespace EWZ\SearchBundle\Lucene;
+namespace EWZ\Bundle\SearchBundle\Lucene;
 
 use Zend\Search\Lucene\Lucene as ZendLucene;
 
