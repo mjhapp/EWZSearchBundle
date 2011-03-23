@@ -6,6 +6,18 @@ Installation
 Requires Zend 2.x Zend/Search/Lucene
 You can get it here http://github.com/zendframework/zf2
 
+**Add SearchBundle to your application kernel:**
+
+    // app/AppKernel.php
+    public function registerBundles()
+    {
+        return array(
+            // ...
+            new EWZ\Bundle\SearchBundle\EWZSearchBundle(),
+            // ...
+        );
+    }
+
 **Add the EWZ namespace to your autoloader:**
 
     // app/autoload.php
