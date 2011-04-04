@@ -41,6 +41,6 @@ class EWZSearchExtension extends Extension
      */
     public function getNamespace()
     {
-        return 'http://symfony.com/schema/dic/ewz/search';
+        return 'http://excelwebzone.com/schema/dic/ewz/search';
     }
 }
