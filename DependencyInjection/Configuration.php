@@ -2,7 +2,6 @@
 
 namespace EWZ\Bundle\SearchBundle\DependencyInjection;
 
-use Symfony\Component\Process\ExecutableFinder;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
