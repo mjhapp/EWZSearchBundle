@@ -6,9 +6,6 @@
 
     <parameters>
         <parameter key="search.lucene.search.class">EWZ\Bundle\SearchBundle\Lucene\LuceneSearch</parameter>
-
-        <parameter key="lucene.index.path">null</parameter>
-        <parameter key="lucene.analyzer">null</parameter>
     </parameters>
 
     <services>
