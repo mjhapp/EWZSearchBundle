@@ -18,6 +18,6 @@ class SearchExtensionTest extends \PHPUnit_Framework_TestCase
         $loader = new EWZSearchExtension();
 
         $loader->load(array(), $container);
-        $this->assertEquals('Bundle\\SearchBundle\\Lucene\\LuceneSearch', $container->getParameter('search.lucene.search.class'), '->luceneLoad() loads the lucene.xml file if not already loaded');
+        $this->assertEquals('Bundle\\SearchBundle\\Lucene\\LuceneSearch', $container->getParameter('ewz_search.lucene.search.class'), '->luceneLoad() loads the lucene.xml file if not already loaded');
     }
 }

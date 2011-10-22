@@ -110,7 +110,7 @@ To index an object use the following example:
 
 use EWZ\Bundle\SearchBundle\Lucene\LuceneSearch;
 
-$search = $this->get('search.lucene');
+$search = $this->get('ewz_search.lucene');
 
 $document = new Document();
 $document->addField(Field::keyword('key', $story->getId()));
@@ -129,7 +129,7 @@ When you want to retrieve data, use:
 
 use EWZ\Bundle\SearchBundle\Lucene\LuceneSearch;
 
-$search = $this->get('search.lucene');
+$search = $this->get('ewz_search.lucene');
 $query = 'Symfony2';
 
 $results = $search->find($query);
