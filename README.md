@@ -15,7 +15,7 @@ add the following entries to the `deps` in the root of your project file:
 ```
 [EWZSearchBundle]
     git=http://github.com/excelwebzone/EWZSearchBundle.git
-    target=/bundles/EWZ/Bundle/EWZSearchBundle
+    target=/bundles/EWZ/Bundle/SearchBundle
 
 ; Dependency:
 ;------------
@@ -46,7 +46,7 @@ Next, add the necessary submodules:
 
 ``` bash
 $ git submodule add git://github.com/excelwebzone/zend-search.git vendor/zend-search/Zend/Search
-$ git submodule add git://github.com/excelwebzone/EWZSearchBundle.git vendor/bundles/EWZ/Bundle/EWZSearchBundle
+$ git submodule add git://github.com/excelwebzone/EWZSearchBundle.git vendor/bundles/EWZ/Bundle/SearchBundle
 ```
 
 ### Step2: Configure the autoloader
